@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap");
+
+body{
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home-body{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+header .head-icons-container{
+    width: 100%;
+    height:  70px;
+    display: grid;
+    background-color: #47cfac;
+}
+header .head-icons-container .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: flex-end;
+    margin-right: 50px;
+}
+
+header .icons span{
+    color: white;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+nav .nav-logo-container{
+    margin-left: 50px;
+}
+nav .nav-logo-container img{
+    width: 220px;
+    margin-top: 10px;
+}
+nav .profile-link{
+    font-family: "Roboto mono", monospace;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+    font-size: 2.1rem;
+}
+nav .profile-link a{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.main{
+    height: 100%;
+    background-image: url("./assets/img/Cover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-info{
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    margin: 15vh auto;
+    align-items: center;
+    justify-content: space-evenly
+}
+.main-info-description{
+    color: white;
+    font-family: "Roboto mono", monospace;
+    font-size: 5.4rem;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: 800;
+}
+
+.main-info-button{
+    font-family: "Roboto mono", monospace;
+    color: white;
+    background-color: #47cfac;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 12px 16px 12px 16px;
+}
+
+.blogs-main{
+    display: grid;
+    margin-top: 85px;
+}
+
+.blogs-news-container{
+    background-color: #e6e9ed;
+    padding: 0px 50px 40px;
+}
+
+.blogs-main-new{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+.blogs-main-new h3{
+    font-size: 2.3rem;
+}
+
+.blogs-news-img-container{
+    grid-column: 1;
+}
+.blogs-news-img-container img{
+    width: 75%;
+}
+.blogs-new-info-container{
+    grid-column: 2;
+    grid-row: 2;
+}
+.blogs-new-info-container p{
+    margin-bottom: 35px;
+    font-size: 1.6rem;
+}
+.blogs-button{
+    border: 1px solid #47cfac;
+    padding: 6px 15px;
+}
+.blogs-posts-container{
+    padding: 0 50px 40px;
+}
+.blogs-posts-container h3{
+    text-align: center;
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+}
+.blogs-button:hover{
+    color: white;
+    background: #47cfac;
+    border-color: white;
+}
+.blogs-posts-container div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.blogs-posts-container .post-container{
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+    align-items: flex-start;
+}
+.blogs-posts-container .post-container p{
+    padding: 0 35px;
+}
+.blogs-posts-container .post-container a{
+    margin-left: 35px;
+}
+.blogs-posts-container .post-container img{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(3, 6, 41);
+    border-top: 35px solid #47cfac;
+}
+
+footer p{
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.6rem;
+}
+.blogpost-img-container {
+    margin: 90px  50px 0; 
+}
+.blogpost-img-container img{
+    width: 100%;
+    height: 100%;
+}
+.blogpost-news-container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.grid-container h3{
+    font-size: 2.4rem;
+}
+.grid-container h1{
+    font-size: 2.4rem;
+}
+.grid-container p{
+    font-size: 1.8rem;
+}
+.blogpost-contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* width: 100%; */
+    margin: 0;
+    background-color: #e6e9ed;
+    gap: 50px;
+    padding: 50px;
+}
+.blogpost-contact-contact{
+    grid-column: 1/2;
+    justify-self: center;
+    width: 350px;
+    display: flex;
+    align-items: center;
+}
+.blogpost-contact-write{
+    grid-column: 2/3;
+    justify-self: center;
+    width: 350px;
+    display: flex;
+    align-items: center;
+}
+.blogpost-contact-contact img{
+    width: 90px;
+}
+.blogpost-contact-write img{
+    width: 90px;
+}
+
+.blogpost-contact-contact div{
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.blogpost-contact-contact div a{
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.blogpost-contact-contact div p{
+    font-size: 1.6rem;
+}
+
+.blogpost-contact-write div{
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.blogpost-contact-write div a{
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.blogpost-contact-write div p{
+    font-size: 1.6rem;
+}
+
+.profile-container{
+    margin-top: 90px;
+    padding: 0 200px;
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e9ed;
+}
+.profile-container figure img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+.projects-container{
+    
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+.projects-container h2{
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 2.4rem;
+}
+.projects-container-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.projects-container-detail{
+    padding: 0;
+    width: 250px;
+    justify-self: center;
+}
+.projects-container-detail figure{
+    margin:0;
+    padding: 0;
+}
+
+.projects-container-detail figure img{
+    width: 100%;
+}
